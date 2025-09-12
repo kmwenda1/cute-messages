@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Messages</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+
+ <div class="hearts">
+    <span class="heart" style="left:10%;">💖</span>
+    <span class="heart" style="left:30%; animation-delay:2s;">🌸</span>
+    <span class="heart" style="left:50%; animation-delay:4s;">💗</span>
+    <span class="heart" style="left:70%; animation-delay:1s;">🌷</span>
+    <span class="heart" style="left:85%; animation-delay:3s;">💞</span>
+  </div>
+
+    
+  
+  <section id="landing">
+        <h1>💌 Welcome to the Cute Card Generator</h1>
+        <p>Type your name to see your special message ✨</p>
+
+        <form id="name-form">
+            <label for="name">your name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name" required>
+            <button type="submit">Show My Card 🌸</button>
+        </form>
+    </section>
+
+     <section id="card" hidden>
+    <article class="card">
+      <h2 class="card-title">Hey <span id="person-name">Friend</span>!</h2>
+      <p class="card-message">This is where the special message will appear 💖</p>
+      <button id="back-btn">⬅ Back</button>
+    </article>
+  </section>
+    <script src="script.js"></script>
+</body>
+</html>
