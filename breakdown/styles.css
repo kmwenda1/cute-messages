@@ -1,0 +1,200 @@
+/* 🌸 General Body Styling */
+body {
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  overflow: hidden;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 🌧️ Rain Effect */
+.rain span {
+  position: absolute;
+  top: -20px;
+  width: 2px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+/* 💕 Floating Hearts / Flowers */
+.hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  bottom: -30px;
+  font-size: 2rem;
+  animation: floatUp 8s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* 💌 Landing Page */
+#landing {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 192, 203, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
+  z-index: 10;
+}
+
+#landing h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#landing p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#landing form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+#landing input {
+  padding: 10px;
+  border: 2px solid pink;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+#landing button {
+  background: pink;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#landing button:hover {
+  background: hotpink;
+  transform: scale(1.1);
+}
+
+/* 🌸 Card Section */
+#card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 400px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
+  z-index: 10;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  color: #ffdde1;
+}
+
+.card-message {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: #fff;
+}
+
+#back-btn {
+  background: pink;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#back-btn:hover {
+  background: hotpink;
+  transform: scale(1.1);
+}
+.chat-box {
+  border: 2px solid #ffb6c1;
+  border-radius: 10px;
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  background: #fff0f5;
+  margin-bottom: 10px;
+}
+
+.user-msg {
+  text-align: right;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.bot-msg {
+  text-align: left;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+#chat-input {
+  width: 70%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ffb6c1;
+  margin-right: 5px;
+}
+
+#send-btn {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffb6c1;
+  color: white;
+  cursor: pointer;
+}
+
+#send-btn:hover {
+  background-color: #ff69b4;
+}
