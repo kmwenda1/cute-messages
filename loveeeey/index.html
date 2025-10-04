@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Little Story for You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sky" aria-hidden="true"></div>
+
+  <main class="book">
+    <header class="cover">
+      <h1 class="title">A Little Story Just for You ✨</h1>
+      <p class="subtitle">A short, friendly note to brighten the day.</p>
+    </header>
+
+    <section id="pageContainer" class="page-container">
+      <article id="page" class="page" role="article" aria-label="Story page">
+        <h2 id="pageHeading" class="heading"></h2>
+        <p id="pageBody" class="body"></p>
+      </article>
+    </section>
+
+    <nav class="controls">
+      <button id="prevBtn" class="nav-btn">← Prev</button>
+      <div class="pager">
+        <span id="pageIndex">1</span> / <span id="pageCount">1</span>
+      </div>
+      <button id="nextBtn" class="nav-btn">Next →</button>
+    </nav>
+
+    <footer class="footer">
+      <button id="restartBtn" class="ghost">Restart</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
